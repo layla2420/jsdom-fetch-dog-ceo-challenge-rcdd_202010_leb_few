@@ -27,7 +27,7 @@ dropdown.addEventListener("change", event => {
   const filteredBreeds = breedList.filter(function(breed) {
     return breed.startsWith(letter)
   })
-  
+
   // (also, clear the list)
   dogList.innerHTML = ''
 
@@ -69,7 +69,7 @@ function renderImage(imageUrl) {
 function renderAllImages(data) {
   // when we have the data
   const images = data.message
-    
+
   // append to the DOM
   images.forEach(imageUrl => {
     renderImage(imageUrl)
